@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: orange;
+  margin: 2rem;
+}
+
+/* HEADER */
+h1 {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+/* RONNIE */
+
+.ronnie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 1px 1px 5px black;
+}
+
+.ronnie > img:first-child {
+  padding-top: 2rem;
+}
+
+.ronnie > h3 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.ronnie > span {
+  padding: 1.2rem;
+}
+
+.ronnie > span > img {
+  width: 50px;
+}
+
+.ronnie > p {
+  background-color: rgb(129, 0, 250);
+  color: white;
+  padding: 2rem;
+}
+
+/* MARGIE */
+
+#espacio1 {
+  padding-top: 2rem;
+}
+
+.margie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 1px 1px 5px black;
+}
+
+.margie > img:first-child {
+  padding-top: 2rem;
+}
+
+.margie > h3 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.margie > span {
+  padding: 1.2rem;
+}
+
+.margie > span > img {
+  width: 50px;
+}
+
+.margie > p {
+  background-color: rgb(129, 0, 250);
+  color: white;
+  padding: 2rem;
+}
+
+/* LAURA */
+
+#espacio2 {
+  padding-top: 2rem;
+}
+
+.laura {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 1px 1px 5px black;
+}
+
+.laura > img:first-child {
+  padding-top: 2rem;
+}
+
+.laura > h3 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.laura > span {
+  padding: 1.2rem;
+}
+
+.laura > span > img {
+  width: 50px;
+}
+
+.laura > p {
+  background-color: rgb(129, 0, 250);
+  color: white;
+  padding: 2rem;
+}
+
+@media (min-width: 700px) {
+  body {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 950px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 8rem 1fr 8rem 1fr;
+    grid-template-areas: 'ronnie espacio1 margie espacio2 laura';
+  }
+
+  header {
+    padding-bottom: 5rem;
+  }
+
+  .ronnie {
+    grid-area: ronnie;
+    align-self: center;
+  }
+
+  #espacio1 {
+    grid-area: espacio1;
+  }
+
+  .margie {
+    grid-area: margie;
+  }
+
+  #espacio2 {
+    grid-area: espacio2;
+  }
+
+  .laura {
+    grid-area: laura;
+    align-self: center;
+  }
+
+  .ronnie {
+    width: 350px;
+    height: 550px;
+  }
+
+  .margie {
+    width: 350px;
+    height: 650px;
+  }
+
+  .laura {
+    width: 350px;
+    height: 550px;
+  }
+
+  .margie {
+    padding-top: 5rem;
+  }
+}
+
+.ronnie:hover {
+  transform: scale(1.2);
+}
+
+.margie:hover {
+  transform: scale(1.2);
+}
+
+.laura:hover {
+  transform: scale(1.2);
+}

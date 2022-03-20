@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+ 
+    line-height: 1.5;
+    font-family: 'Smooch Sans', sans-serif;
+    display: grid;
+    grid-template-rows: 10em 50vh auto 10em;
+    grid-template-columns: 1fr 5fr 2fr 1fr;
+    grid-template-areas: "header header header header"
+    "hero hero hero hero"
+    ". main article ."
+    "footer footer footer footer";
+
+}
+
+main {
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 1.5rem;
+    
+}
+
+aside {
+
+        margin-top: 100px;
+        margin-bottom: 100px;
+        font-size: 1rem;
+}
+
+header, footer {
+    background-color: black;
+    color: yellow;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+.hero {
+
+    background: url(https://i.pinimg.com/originals/12/eb/83/12eb8326734b61a9934f4bbf9ccc63db.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero-title {
+
+    font-family:'Smooch Sans', sans-serif;
+    font-size: 8rem;
+    color: yellow;
+    text-shadow: 2px 2px 5px black;
+    margin: 0;
+}
+
+.hero-subtitle {
+
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 3rem;
+    margin: 0;
+}
+
+img {
+
+width: 100px;
+
+}
+
+header {
+    grid-area:header;
+
+
+}
+
+.hero {
+
+    grid-area: hero;
+}
+
+main {
+
+    grid-area: main;
+
+
+}
+
+aside {
+
+    grid-area: article;
+}
+
+footer {
+    grid-area: footer;
+
+}

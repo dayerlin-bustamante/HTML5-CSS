@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 11px;
+}
+
+:root {
+    --color-grey: rgb(70, 70, 70);
+    --color-gold: rgb(253, 207, 55);
+    --color-dark-grey: rgb(29, 29, 29);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+p {
+    line-height: 3vmin;
+    font-size: 2.5vmin;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/**HEADER*/
+
+body > header {
+    height: 8vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body > header > h2 {
+    color: var(--color-grey);
+    font-size: 3.2vmin;
+    margin-left: 6vmin;
+}
+
+ul.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    margin-right: 5vmin;
+}
+
+ul.nav-list > li:not(:last-child) {
+    margin-right: 3vmin;
+}
+
+ul.nav-list > li > a {
+    font-size: 2vmin;
+    color: var(--color-grey);
+}
+
+ul.nav-list > li:last-child {
+    background-color: var(--color-gold);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+}
+
+/* HEAD SECTION */
+
+section.head-section {
+    height: 60vmin;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/car-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.head-section > h2,
+section.head-section > h3,
+section.head-section > p {
+    text-shadow: 3px 2px 3px rgb(0, 0, 0);
+}
+
+section.head-section > h2 {
+    font-size: 5vmin;
+}
+
+section.head-section > h3 {
+    color: var(--color-gold);
+    font-size: 3vmin;
+    margin: 3vmin 0;
+}
+
+section.head-section > p {
+    display: none;
+    font-weight: 300;
+    max-width: 80%;
+    text-align: center;
+}
+
+section.head-section > a {
+    margin-top: 3vmin;
+    padding: 0.7rem 1.5rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    font-size: 2vmin;
+}
+
+/* CARS-SECTION */
+
+section.cars-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8vmin 5vmin;
+}
+
+section.cars-section > h2 {
+    font-size: 5vmin;
+    font-weight: 900;
+}
+
+section.cars-section > p {
+    margin-top: 3vmin;
+    text-align: center;
+    font-weight: 300;
+    max-width: 80%;
+}
+
+ul.cars-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 80%;
+}
+
+ul.cars-list > li {
+    margin: 5vmin;
+}
+
+ul.cars-list > li > figure > figcaption {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-gold);
+    height: 20%;
+}
+
+ul.cars-list > li > figure > figcaption > span {
+    font-size: 3.5vmin;
+    font-weight: 700;
+    padding: 4vmin 0;
+}
+
+/* FIND-CARS-SECTION */
+
+section.find-car-section {
+    background: url('../img/form-background.jpeg') no-repeat;
+    background-size: cover;
+    height: 60vmin;
+}
+
+section.find-car-section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+section.find-car-section > div > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.find-car-section > div > h2 {
+    color: var(--color-gold);
+    margin-bottom: 3vmin;
+    font-size: 3vmin;
+    text-shadow: 2px 2px 2px rgb(82, 67, 17);
+}
+
+section.find-car-section > div > form > select,
+section.find-car-section > div > form > input:not(:last-child) {
+    padding: 0.6rem;
+    height: 6.5vmin;
+    width: 40vmin;
+    font-size: 2.5vmin;
+    font-style: italic;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+section.find-car-section > div > form > select > option {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0.5rem;
+}
+
+section.find-car-section > div > form > input[type='submit'] {
+    background-color: white;
+    font-weight: 700;
+    border: none;
+    margin-top: 4vmin;
+    padding: 0.4rem 1.2rem;
+    font-size: 2.5vmin;
+}
+
+/* ABOUT SECTION */
+
+section.about-section,
+ul.about-list > li > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.about-section {
+    margin: 5vmin;
+}
+
+section.about-section > h2 {
+    font-size: 5vmin;
+    font-weight: 900;
+}
+
+ul.about-list {
+    list-style: none;
+}
+
+ul.about-list > li > section {
+    margin: 6vmin 0;
+}
+
+ul.about-list > li > section > h2 {
+    display: inline-block;
+    color: white;
+    background-color: var(--color-dark-grey);
+    border: 5px solid var(--color-gold);
+    border-radius: 50%;
+    margin-bottom: 3vmin;
+    padding: 2vmin;
+    font-size: 2.5vmin;
+}
+
+ul.about-list > li > section > p {
+    text-align: center;
+    font-weight: 300;
+    max-width: 80%;
+}
+
+/* FOOTER */
+
+body > footer {
+    height: 8vmin;
+    background-color: var(--color-dark-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > footer > p {
+    color: rgb(255, 255, 255);
+    font-size: 2.2vmin;
+}
+
+/* Esta media query aplica a partir de los 700px de ancho */
+@media (min-width: 700px) {
+    section.head-section > p {
+        display: block;
+    }
+
+    ul.cars-list {
+        flex-direction: row;
+        align-items: end;
+    }
+
+    ul.cars-list > li {
+        margin: 0;
+        width: 33%;
+    }
+
+    ul.cars-list > li > figure > div {
+        margin: 4vmin 0;
+    }
+
+    ul.cars-list > li > figure > figcaption > span {
+        padding: 2vmin 0;
+        font-size: 2.8vmin;
+    }
+
+    section.find-car-section > div > form > input[type='submit'] {
+        padding: 1.8rem;
+    }
+}

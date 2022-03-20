@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>PERSONALIZA TU HAMBUERGUESA</h1>
+    </header>
+    <main>
+      <form action="#" method="get">
+        <h3>Ingredientes</h3>
+
+        <label for="queso">Queso</label>
+        <input type="checkbox" name="queso" id="queso" />
+
+        <label for="pimiento">Pimiento</label>
+        <input type="checkbox" name="pimiento" id="pimiento" />
+
+        <label for="cebolla">Cebolla</label>
+        <input type="checkbox" name="cebolla" id="cebolla" />
+
+        <label for="jamon">Jamón</label>
+        <input type="checkbox" name="jamon" id="jamon" />
+
+        <label for="huevo">Huevo</label>
+        <input type="checkbox" name="huevo" id="huevo" />
+
+        <h3>Tamaño</h3>
+
+        <label for="pequeño">Pequeño</label>
+        <input type="radio" name="tamaño" id="pequeño" />
+
+        <label for="mediano">Mediano</label>
+        <input type="radio" name="tamaño" id="mediano" />
+
+        <label for="grande">Grande</label>
+        <input type="radio" name="tamaño" id="grande" />
+
+        <form action="#" method="get">
+          <h1>DATOS DE ENTREGA</h1>
+
+          <div>
+            <p>Nombre</p>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              size="50"
+              autofocus
+              required
+            />
+            <label for="nombre"></label>
+          </div>
+
+          <div>
+            <p>Dirección</p>
+            <input
+              type="text"
+              name="direccion"
+              id="direccion"
+              size="50"
+              required
+            />
+            <label for="direccion"></label>
+          </div>
+
+          <div>
+            <p>Teléfono</p>
+
+            <input type="tel" name="tel" id="tel" size="50" required />
+            <label for="tel"></label>
+          </div>
+
+          <div>
+            <p>Instruciones Especiales</p>
+
+            <textarea
+              name="message"
+              id="message"
+              cols="50"
+              rows="5"
+              placeholder="Deja aquí tus Instruciones..."
+            ></textarea>
+          </div>
+
+          <h1>METODO DE PAGO</h1>
+
+          <select name="pago" id="pago">
+            <option value="0">Tarjeta de debito</option>
+            <option value="1">Tarjeta de credito</option>
+          </select>
+        </form>
+
+        <button>Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
