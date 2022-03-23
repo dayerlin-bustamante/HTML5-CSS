@@ -154,6 +154,11 @@ h1 {
   .ronnie {
     grid-area: ronnie;
     align-self: center;
+    animation: faceIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    width: 350px;
+    height: 550px;
   }
 
   #espacio1 {
@@ -162,6 +167,12 @@ h1 {
 
   .margie {
     grid-area: margie;
+    animation: faceIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    width: 350px;
+    height: 650px;
+    padding-top: 5rem;
   }
 
   #espacio2 {
@@ -171,36 +182,49 @@ h1 {
   .laura {
     grid-area: laura;
     align-self: center;
-  }
-
-  .ronnie {
+    animation: faceIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
     width: 350px;
     height: 550px;
   }
 
-  .margie {
-    width: 350px;
-    height: 650px;
+  .ronnie:hover {
+    transform: scale(1.2);
   }
 
-  .laura {
-    width: 350px;
-    height: 550px;
+  .margie:hover {
+    transform: scale(1.2);
   }
 
-  .margie {
-    padding-top: 5rem;
+  .laura:hover {
+    transform: scale(1.2);
   }
-}
 
-.ronnie:hover {
-  transform: scale(1.2);
-}
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
-.margie:hover {
-  transform: scale(1.2);
-}
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
-.laura:hover {
-  transform: scale(1.2);
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
